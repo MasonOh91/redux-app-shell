@@ -29,7 +29,8 @@ module.exports = {
             { test: /\.scss$/, loaders: ["style-loader", "css-loader?sourceMap!sass-loader?sourceMap"] },
             { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
             { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
-            { test: /\.(jpg|jpeg|gif|png|ico)$/, exclude: /node_modules/, loader: 'url-loader?limit=8192' }
+            { test: /\.(jpg|jpeg|gif|png|ico)$/, exclude: /node_modules/, loader: 'url-loader?limit=8192' },
+            { test: /\.(ico)$/, loader: "static-loader" }
         ]
     },
     plugins: [
