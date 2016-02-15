@@ -39,5 +39,5 @@ module.exports = {
         new webpack.NoErrorsPlugin()
         // -- breaks out css
         // new ExtractTextPlugin('layout.css')
-    ]
+    ],
 }
