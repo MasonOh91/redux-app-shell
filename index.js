@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import App from './containers/App';
 import configureStore from './store/configureStore';
 
-require("static?!./favicon.ico?output=favicon.ico");
+import 'static?!./favicon.ico?output=favicon.ico';
 
 import './node_modules/normalize.css/normalize.css'
 import './static/styles/bootstrap.css'
