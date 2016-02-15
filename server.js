@@ -1,5 +1,4 @@
 var webpack = require('webpack');
-var config = require('./webpack.config');
 var path = require('path');
 var express = require('express');
 var app = new (require('express'))();
@@ -11,6 +10,7 @@ var isDevelopment = (process.env.NODE_ENV !== 'production');
 var static_path = path.join(__dirname, 'public');
 
 if (isDevelopment) {
+    var config = require('./webpack.config');
     var webpackDevMiddleware = require('webpack-dev-middleware');
     var webpackHotMiddleware = require('webpack-hot-middleware');
 
